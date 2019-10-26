@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .divide{
+            background-color: green;;
+            height: 3px;
+            width: 50%;
+            margin: 5px;
+        }
+        .texto-cor{
+            color: green;
+        }
+        .texto{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+        }
+        .foto{
+            width: 30%;
+            border-radius: 25px;
+        }
+        .rodape{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+        }
+    </style>
+    <title>George</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Curriculo</a>
+                <button class="navbar-toggler navbar-toggler-right bg-primary text-white rounded collapsed" type="button" 
+                    data-toggle="collapse" data-target="#barra" aria-controls="navbarResponsive" 
+                    aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-collapse collapse" id="barra">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" 
+                                href="https://github.com/George1050/">GitHub
+                            </a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <div class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">
+                                <input type="text" name="pesquisa" id="pesq" placeholder="Pesquisar">
+                                <button class="btn btn-primary">P</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <!--Minha capa com foto e o nome do curso ao qual pertenço-->
+        <section class="jumbotron jumbotron-auto">
+            <div class="row align-items-center texto-cor" align="center">
+                <div class="col">
+                    <figure>
+                        <img class="foto" src="foto.jpg"/>
+                    </figure>
+                    <h2>
+                        George Ravelly da Silva Ribeiro
+                    </h2>
+                    <div class="divide"></div>
+                    <h5 class="texto">
+                        Analise e desenvolvimento de sistema
+                    </h5>
+                </div>
+                
+            </div>
+        </section>
+        <!--Minha descrição pessoal-->
+        <section class="jumbotron jumbotrom-auto">
+            <div class="row align-items-center container">
+                <div class="col">
+                    <header>
+                        <H3 class="texto-cor">Descrição Pessoal</H3>
+                    </header>
+                    <p class="texto texto-cor">
+                        Me chamo George e sou uma pessoa bastante <br />
+                        curiosa, quando me interesso por algo <br />
+                        mantenho o foco por muito tempo, <br />
+                        gosto de ler e praticar artes marciais...
+                    </p>
+                </div>
+                <figure class="col d-none d-md-block">
+                    <img src="ws-capoeira.png" width="100%" heigth="100%">
+                </figure>
+            </div>
+        </section>
+        <!--Lista dos meus interesses pessoais-->
+        <section class="jumbotron jumbotron-auto texto texto-cor">
+            <div class="row container">
+                <div class="col">  
+                    <header>
+                        <h3>Lista de Interesses</h3>
+                    </header>
+                    <ul>
+                        <li>Artes Marciais</li>
+                        <li>Livros de Fantasia e Ficção</li>
+                        <li>Música</li>
+                        <li>Filmes</li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <header>
+                        <h3>Preferecia por Linguagem de Programação</h3>
+                    </header>
+                    <ol>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--Tabela de Horários vagos-->
+        <!--
+            <section class="jumbotron">
+                <small for="button">Click para ver:</small>
+                <div class="row">
+                    <button class="col btn btn-primary" type="button" data-target="#horarios" data-toggle="collapse">
+                        Horários Vagos
+                    </button>
+                </div>
+                <br>
+                <div class="row justify-content-center collapse" id="horarios">
+                    <div class="col-2 border">
+                        <h4>Segunda</h4>
+                        <h6>Vago</h6>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Terça</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Quarta</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Quinta</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Sexta</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Final de Semana</h4>
+                    </div>
+                </div>
+            </section>
+        -->
+        <!--Mapa-->
+        <div class="jumbotron">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1GjvuAFAkM8p_pIk8puoKyIjE_gE"
+            width="300" height="300"></iframe>
+        </div>
+        <!--Rodapé da Página-->
+        <footer class="container rodape">
+            <header><h3>Informações de Contato</h3></header>
+            <address class="text-secondary">
+                Fone: +55 (84) 99171 - 1320 <br />
+                email: <a href="mail.google.com">george.ravelly2@gmail.com</a>
+            </address>
+        </footer>
+    </main>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+</html>
