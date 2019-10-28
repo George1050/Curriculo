@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>George</title>
+</head>
+<body class="fundo">
+    <main class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Curriculo</a>
+                <button class="navbar-toggler navbar-toggler-right bg-primary text-white rounded collapsed" type="button" 
+                    data-toggle="collapse" data-target="#barra" aria-controls="navbarResponsive" 
+                    aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-collapse collapse" id="barra">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3" 
+                                href="https://github.com/George1050/">GitHub
+                            </a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <div class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">
+                                <input type="text" name="pesquisa" id="pesq" placeholder="Pesquisar">
+                                <button class="btn btn-primary">P</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <!--Minha capa com foto e o nome do curso ao qual pertenço-->
+        <section class="container-fluid blocos">
+            <div class="row texto-cor texto" align="center">
+                <div class="col">
+                    <figure>
+                        <img class="foto" src="foto.jpg"/>
+                    </figure>
+                    <h2>
+                        George Ravelly
+                    </h2>
+                    <div class="divide"></div>
+                    <h4>
+                        Análise e desenvolvimento de sistema
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <!--Minha descrição pessoal-->
+        <section class="container-fluid blocos" id="sobre">
+            <div class="row align-items-center container">
+                <div class="col">
+                    <header>
+                        <H3 class="texto-cor">Descrição Pessoal</H3>
+                    </header>
+                    <p class="texto texto-cor">
+                        Me chamo George e sou uma pessoa bastante <br />
+                        curiosa, quando me interesso por algo <br />
+                        mantenho o foco por muito tempo, <br />
+                        gosto de ler e praticar artes marciais...
+                    </p>
+                </div>
+                <figure class="col d-none d-md-block">
+                    <img src="ws-capoeira.png" width="100%" heigth="100%">
+                </figure>
+            </div>
+        </section>
+        <!--Lista dos meus interesses pessoais-->
+        <section class="container-fluid blocos texto texto-cor">
+            <div class="row ">
+                <div class="col">  
+                    <header>
+                        <p class="texto">Lista de Interesses</p>
+                    </header>
+                    <ul>
+                        <li>Artes Marciais</li>
+                        <li>Livros de Fantasia e Ficção</li>
+                        <li>Música</li>
+                        <li>Filmes</li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <header>
+                        <p class="texto">Preferêcia por Linguagem de Programação</p>
+                        <button type="button" class="btn btn-secondary" data-target=".prog" data-toggle="collapse" 
+                            title="click para ver meu desenvolvimento em cada linguagem">
+                            Progresso
+                        </button>
+                    </header>
+                    <ol>
+                        <li>C</li>
+                        <div class="progress collapse multi-collapse prog">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                        <li>Java</li>
+                        <div class="progress collapse multi-collapse prog">
+                            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                        </div>
+                        <li>PHP</li>
+                        <div class="progress collapse multi-collapse prog">
+                            <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">45%</div>
+                        </div>
+                        <li>JavaScript</li>
+                        <div class="progress collapse multi-collapse prog">
+                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                        <li>Python</li>
+                        <div class="progress collapse multi-collapse prog">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--Tabela de Horários vagos-->
+        <!--
+            <section class="jumbotron">
+                <small for="button">Click para ver:</small>
+                <div class="row">
+                    <button class="col btn btn-primary" type="button" data-target="#horarios" data-toggle="collapse">
+                        Horários Vagos
+                    </button>
+                </div>
+                <br>
+                <div class="row justify-content-center collapse" id="horarios">
+                    <div class="col-2 border">
+                        <h4>Segunda</h4>
+                        <h6>Vago</h6>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Terça</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Quarta</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Quinta</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Sexta</h4>
+                    </div>
+                    <div class="col-2 border">
+                        <h4>Final de Semana</h4>
+                    </div>
+                </div>
+            </section>
+        -->
+        <!--Mapa-->
+        <div class="container-fluid blocos" id="contato">
+            <div class="row">
+                <div class="col">
+                    <h3>Endereço</h3>
+                    <address>
+                        <button class="btn btn-secondary" data-toggle="modal" data-target="#cartao" title="click para ver o mapa">Macaíba/RN</button>
+                        <br>
+                        Povoado Riacho do Sangue <br>
+                        Numero 04
+                    </address>
+                    <div class="modal fade" id="cartao" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="label">Localização</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe src="https://www.google.com/maps/d/embed?mid=1GjvuAFAkM8p_pIk8puoKyIjE_gE" 
+                                        width="100%" height="250">
+                                    </iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a href="https://www.google.com/maps/d/embed?mid=1GjvuAFAkM8p_pIk8puoKyIjE_gE" class="btn btn-primary">Google Maps</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="cartao" tabindex="-1" role="dialog">
+                        
+                    
+                </div>
+            </div>
+                <div class="col">
+                    <h3>Redes Sociais</h3> 
+                    <a href="facebook.com.br"><img src="facebook.png" width="10%"></a>
+                    <a href="twitter.com.br"><img src="twitter.png" width="10%"></a>
+                    <a href="instagram.com.br"><img src="instagram.png" width="10%"></a>
+                </div>
+                <div class="col">
+                    <h3>Informações de Contato</h3>
+                    <address>
+                        Fone: +55 (84) 99171 - 1320 <br />
+                        email: <a href="mail.google.com">george.ravelly2@gmail.com</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <!--Rodapé da Página-->
+        <footer class="container rodape texto-cor">
+            <p class="text-secondary">
+                Copyright © George 2019
+            </p>
+        </footer>
+    </main>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+</html>
