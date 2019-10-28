@@ -1,0 +1,34 @@
+.blocos{
+    background-color: rgb(219, 213, 213);
+    border-radius: 5px;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.divide{
+    background-color: whitesmoke;;
+    height: 3px;
+    width: 50%;
+    margin: 5px;
+}
+.texto-cor{
+    color: black;
+}
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+.foto{
+    width: 30%;
+    border-radius: 25px;
+}
+.fundo{
+    background-color: #000000;
+}
+.rodape{
+    text-align: center;
+    margin: 10px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
